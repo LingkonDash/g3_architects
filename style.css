@@ -25,6 +25,7 @@ body {
   max-width: 100%;
 }
 
+
 .head {
   padding: 3% 13%;
   background-color: rgba(255, 144, 14, 0.1);
@@ -88,6 +89,8 @@ body {
       font-size: 0.9rem;
       padding: 1rem 1.25rem;
     }  
+
+
  .head {
    padding: 2% 8%;
   }
@@ -115,12 +118,17 @@ body {
       font-size: 0.9rem;
       padding: 1rem 1.25rem;
     } 
+
+
   .head {
       padding: 2% 5%;
   }
   .head .navbar {
     flex-direction: column;
     gap: 1.1rem;
+  }
+  .navbar ul {
+    gap: 1.3rem;
   }
   .head .head_section .head_content {
     margin-bottom: 1.2rem;

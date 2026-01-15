@@ -7,4 +7,72 @@
 }
 body {
     font-family: "Work Sans", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Shared Styles */
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 24px;
+  background-color: #FF900E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.imgs {
+  max-width: 100%;
+}
+
+.head {
+  padding: 3rem 13rem;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .brand {
+  font-size: 2.8ram;
+  font-weight: bold;
+  color: #131313;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 26px;
+  color: #424242;
+}
+
+.head .head_section {
+  margin-top: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head .head_section .head_content {
+  max-width: 860px;
+  margin-bottom: 3rem;
+}
+.head .head_section .head_content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #131313;
+}
+.head_content p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #727272;
+  margin: 30px 0;
 }

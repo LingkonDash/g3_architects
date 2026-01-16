@@ -113,6 +113,69 @@ body {
   color: #727272;
   margin: 2rem 0 3rem 0;
 }
+.section2 {
+  padding: 9rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.section2 .main_features {
+  max-width: 586px;
+  max-height: 982px;
+}
+.section2 .main_features .feature_head {
+  font-size: 4.5rem;
+  color: #131313;
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+.main_features .feature_details {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #727272;
+  margin: 2rem 0 3rem;
+}
+.main_features .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main_features .cards .card {
+  padding: 3rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+}
+.cards .card .card_head {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #131313;
+  margin-bottom: 1rem;
+}
+.cards .card .card_content {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #727272;
+}
+.section2 .feature_img {
+  padding-left: 6rem;
+  position: relative;
+}
+.section2 .feature_img .exbtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 3rem 4rem 2rem;
+  line-height: 30px;
+}
+.section2 .feature_img .exbtn span {
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 /* media queries */
 @media screen and (max-width: 65.625rem) and (min-width: 51.875rem) {

@@ -80,7 +80,41 @@ body {
   color: #727272;
   margin: 2.8rem 0;
 }
+.section1 {
+  padding: 9rem 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+.section1 .team {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  gap: 2.4rem;
+}
+.section1 .features {
+  max-width: 40rem;
+}
+.section1 .features .feature_title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #131313;
+}
+.feature_title .span_1 {
+  color: #727272;
+  font-weight: 500;
+}
+.feature_title .span_2 {
+  color: #FF900E;
+}
+.features .feature_description {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #727272;
+  margin: 2rem 0 3rem 0;
+}
 
+/* media queries */
 @media screen and (max-width: 65.625rem) and (min-width: 51.875rem) {
   html {
     font-size: 50%;

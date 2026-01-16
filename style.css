@@ -161,6 +161,7 @@ body {
 }
 .section2 .feature_img {
   padding-left: 6rem;
+  padding-bottom: 6rem;
   position: relative;
 }
 .section2 .feature_img .exbtn {
@@ -170,14 +171,16 @@ body {
   font-size: 5rem;
   font-weight: bold;
   padding: 3rem 4rem 2rem;
-  line-height: 30px;
+  line-height: 3.5rem;
 }
 .section2 .feature_img .exbtn span {
   font-size: 2rem;
   font-weight: 500;
 }
 
-/* media queries */
+                          /* media queries */
+
+/* large device */
 @media screen and (max-width: 65.625rem) and (min-width: 51.875rem) {
   html {
     font-size: 50%;
@@ -185,7 +188,16 @@ body {
   .head, .section1 {
     padding: 4rem 15rem;
   }
+  .section2 {
+    padding: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
 }
+
+/* mid devive */
 @media screen and (max-width: 51.875rem) and (min-width: 36rem) {
   html {
     font-size: 40%;
@@ -199,7 +211,16 @@ body {
   .head .head_section .head_content p{
     font-size: 2rem;
   }
+  .section2 {
+    padding: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
 }
+
+/* small device */
 @media screen and (max-width: 36rem) {
   html {
     font-size: 31.25%;
@@ -253,5 +274,12 @@ body {
   .features .feature_description {
     font-size: 3rem;
     line-height: 4rem;
+  }
+  .section2 {
+    padding: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
   }
 }

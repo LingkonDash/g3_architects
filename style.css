@@ -282,4 +282,26 @@ body {
     align-items: center;
     gap: 8rem;
   }
+  .section2 .main_features .feature_head {
+    font-size: 6.5rem;
+  }
+  .main_features .feature_details, 
+  .cards .card .card_content {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .main_features .feature_details {
+    margin-bottom: 5rem;
+  }
+  .main_features .cards {
+    gap: 3rem;
+  }
+  .main_features .cards .card {
+    padding: 4.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.253);
+  }
+  .cards .card .card_head {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
 }

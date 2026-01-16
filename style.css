@@ -129,7 +129,8 @@ body {
   border-left: 5px solid #FF900E;
   padding-left: 21px;
 }
-.main_features .feature_details {
+.main_features .feature_details,
+.section3 .fact_details {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #727272;
@@ -177,6 +178,45 @@ body {
   font-size: 2rem;
   font-weight: 500;
 }
+.section3 {
+  margin: 10rem 0 15rem;
+  padding: 4rem 20rem;
+}
+.section3 .fact_head {
+  font-size: 4.5rem;
+  color: #131313;
+  font-weight: bold;
+}
+.section3 .fact_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+.fact_container .facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  place-items: center;
+
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  padding: 3rem;
+
+  width: 24.2rem;
+  height: 24.2rem;
+}
+.facts h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #131313;
+}
+.facts p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #727272;
+}
 
                           /* media queries */
 
@@ -194,6 +234,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8rem;
+  }
+  .section3 {
+    margin: 5rem 0 10rem;
+    padding: 4rem 20rem;
+    text-align: center;
+  }
+  .section3 .fact_head {
+    font-size: 6rem;
+  }
+  .section3 .fact_details {
+    font-size: 2rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -217,6 +269,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8rem;
+  }
+  .section3 {
+    margin: 5rem 0 10rem;
+    padding: 4rem 15rem;
+    text-align: center;
+  }
+  .section3 .fact_head {
+    font-size: 6rem;
+  }
+  .section3 .fact_details {
+    font-size: 2rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -286,7 +350,8 @@ body {
     font-size: 6.5rem;
   }
   .main_features .feature_details, 
-  .cards .card .card_content {
+  .cards .card .card_content, 
+  .section3 .fact_details {
     font-size: 3rem;
     line-height: 3.8rem;
   }
@@ -303,5 +368,38 @@ body {
   .cards .card .card_head {
     font-size: 4.5rem;
     margin-bottom: 2rem;
+  }
+  .section3 {
+    margin: 5rem 0 10rem;
+    padding: 4rem 10rem;
+    text-align: center;
+  }
+  .section3 .fact_head {
+    font-size: 8rem;
+  }
+  .section3 .fact_details {
+    font-size: 3.5rem;
+    margin-bottom: 8rem;
+  }
+}
+
+/* very small device */
+@media (max-width:418px) {
+  .section2 .main_features .feature_head {
+    font-size: 5rem;
+  }
+   .main_features .feature_details {
+    margin-bottom: 2rem;
+  }
+  .main_features .cards {
+    gap: 2rem;
+  }
+  .main_features .cards .card {
+    padding: 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.253);
+  }
+  .cards .card .card_head {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
 }

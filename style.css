@@ -243,7 +243,16 @@ body {
 .section4 .Sponspors .img {
   filter: grayscale(1);
 }
-
+footer {
+  margin: 13rem 20rem;
+  padding: 4rem 7rem;
+  text-align: center;
+  background-color: #FFF4E7;
+}
+footer p {
+  font-size: 2rem;
+  color: #424242;
+}
                           /* media queries */
 
 /* large device */
@@ -261,7 +270,7 @@ body {
     align-items: center;
     gap: 8rem;
   }
-  .section3 {
+  .section3, .section4, footer {
     margin: 5rem 0 10rem;
     padding: 4rem 20rem;
     text-align: center;
@@ -296,7 +305,7 @@ body {
     align-items: center;
     gap: 8rem;
   }
-  .section3, .section4 {
+  .section3, .section4, footer {
     margin: 5rem 0 10rem;
     padding: 4rem 15rem;
     text-align: center;
@@ -407,6 +416,11 @@ body {
     font-size: 3.5rem;
     margin-bottom: 8rem;
     line-height: 4rem;
+  }
+  footer {
+    margin: 5rem 0 10rem;
+    padding: 4rem 15rem;
+    text-align: center;
   }
 }
 

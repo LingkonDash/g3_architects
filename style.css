@@ -90,7 +90,7 @@ body {
 .section1 .team {
   display: grid;
   grid-template-columns: repeat(2, 25rem);
-  gap: 2.4rem;
+  gap: 2rem;
 }
 .section1 .features {
   max-width: 40rem;
@@ -119,7 +119,7 @@ body {
   html {
     font-size: 50%;
   }
-  .head {
+  .head, .section1 {
     padding: 4rem 15rem;
   }
 }
@@ -127,7 +127,7 @@ body {
   html {
     font-size: 40%;
   }
-  .head {
+  .head, .section1 {
     padding: 4rem 12rem;
   }
   .head .head_section .head_content h1 {
@@ -140,6 +140,10 @@ body {
 @media screen and (max-width: 36rem) {
   html {
     font-size: 31.25%;
+  }
+  .btn {
+    font-size: 2.5rem;
+    padding: 2.2rem 3rem;
   }
   .head {
     padding: 2rem 4rem;
@@ -162,5 +166,29 @@ body {
   }
   .head .head_section .head_content p{
     font-size: 2.5rem;
+  }
+  .section1 {
+    padding: 8rem 0;
+    flex-direction: column-reverse;
+  }
+  .section1 .team {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .team .item .imgs {
+    border: 3px solid rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+  }
+  .section1 .features {
+    max-width: 80%;
+    text-align: center;
+  }
+  .section1 .features .feature_title {
+    font-size: 9rem;
+  }
+  .features .feature_description {
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }

@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 body {
     font-family: "Work Sans", sans-serif;
     max-width: 1440px;
@@ -12,9 +15,9 @@ body {
 }
 /* Shared Styles */
 .btn {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.25rem 1.5rem;
+  padding: 2rem 2.4rem;
   background-color: #FF900E;
   color: #FFFFFF;
   border: none;
@@ -27,7 +30,7 @@ body {
 
 
 .head {
-  padding: 3% 13%;
+  padding: 4rem 20rem;
   background-color: rgba(255, 144, 14, 0.1);
 }
 .navbar {
@@ -36,7 +39,7 @@ body {
   align-items: center;
 }
 .navbar .brand {
-  font-size: 2.8ram;
+  font-size: 4rem;
   font-weight: bold;
   color: #131313;
 }
@@ -45,17 +48,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 .navbar a {
   text-decoration: none;
-  font-size: 1rem;
-  line-height: 26px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   color: #424242;
 }
 
 .head .head_section {
-  margin-top: 6%;
+  margin-top: 8rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -67,78 +70,63 @@ body {
   margin-bottom: 3rem;
 }
 .head .head_section .head_content h1 {
-  font-size: 4rem;
+  font-size: 6.4rem;
   font-weight: bold;
   color: #131313;
 }
 .head_content p {
-  font-size: 1rem;
-  line-height: 1.625;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   color: #727272;
-  margin: 1.8rem 0;
+  margin: 2.8rem 0;
 }
 
-@media screen and (max-width:992px) and (min-width: 792px) {
+@media screen and (max-width: 65.625rem) and (min-width: 51.875rem) {
+  html {
+    font-size: 50%;
+  }
   .head {
-      padding: 2% 10%;
-    }
+    padding: 4rem 15rem;
+  }
 }
-@media screen and (max-width: 792px) and (min-width: 576px) {
-  /* Shared Styles */
-  .btn {
-      font-size: 0.9rem;
-      padding: 1rem 1.25rem;
-    }  
-
-
- .head {
-   padding: 2% 8%;
+@media screen and (max-width: 51.875rem) and (min-width: 36rem) {
+  html {
+    font-size: 40%;
   }
-  .brand {
-    font-size: 1.5rem;
-  }
-  .navbar ul {
-    gap: 1.5rem;
-  }
-  .head .head_section .head_content {
-    margin-bottom: 1.5rem;
+  .head {
+    padding: 4rem 12rem;
   }
   .head .head_section .head_content h1 {
-      font-size: 3rem;
-    }
-  .head .head_section .head_content p {
-      font-size: 0.7rem;
-      line-height: 1.125rem;
-      margin: 1rem 0;
-    }
-}
-@media screen and (max-width: 576px) {
-  /* Shared Styles */
-  .btn {
-      font-size: 0.9rem;
-      padding: 1rem 1.25rem;
-    } 
-
-
-  .head {
-      padding: 2% 5%;
+    font-size: 6.8rem;
   }
-  .head .navbar {
+  .head .head_section .head_content p{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 36rem) {
+  html {
+    font-size: 31.25%;
+  }
+  .head {
+    padding: 2rem 4rem;
+  }
+  .navbar {
     flex-direction: column;
-    gap: 1.1rem;
   }
-  .navbar ul {
-    gap: 1.3rem;
+  .navbar .brand {
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
   }
-  .head .head_section .head_content {
-    margin-bottom: 1.2rem;
+  .navbar ul li a {
+    font-size: 3rem;
+  }
+  .head .head_section {
+    margin-top: 5rem;
   }
   .head .head_section .head_content h1 {
-      font-size: 2.5rem;
-    }
-  .head .head_section .head_content p {
-      font-size: 0.7rem;
-      line-height: 1.125rem;
-      margin: 1rem 0;
-    }
+    font-size: 7rem;
+  }
+  .head .head_section .head_content p{
+    font-size: 2.5rem;
+  }
 }
